@@ -1,0 +1,22 @@
+
+/*Tablets & larger smartphones.*/
+@media  screen and (min-width:200px) and (max-width:768px){
+    .temp_info p{font-size: 18px;}
+    .temp_converter .card{max-width: 400px;}
+    #app_descripton p{font-size: 17px;} 
+}
+/*Small Device*/
+@media  screen and (min-width:200px)and (max-width:480px){
+    .temp_converter .card{max-width: 350px;}
+    .temp_converter .card form {display: block; text-align: center;}
+    #app_descripton p{font-size: 16px;}
+    footer h5{font-size: 14px;}
+}
+/*Extra Small Device*/
+@media  screen and (min-width:200px)and (max-width:379px){
+    header{padding-top: 150px;}
+    .temp_info h1{font-size: 20px; font-weight: 600;}
+    .temp_info p{font-size: 15px; font-weight: 500;}
+    .temp_converter .card{max-width: 260px;}
+    #app_descripton p{font-size: 15px;}
+}

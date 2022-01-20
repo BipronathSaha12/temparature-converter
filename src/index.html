@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="temperature converter, temperature converter app, js temperatuer_converter app">
+    <meta name="description" content="Temperature degrees conversions of Fahrenheit (°F), Celsius (°C)">
+    <meta name="author" content="Bipronath Saha">
+
+    <!--shortcut icon-->
+    <link rel="shortcut icon" href="/favicon.jpg">
+    <title>Temperature Converter</title>
+          
+    <!---Bootstrap CSS-->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <!--aos CSS-->
+    <link rel="stylesheet" href="/css/aos.css">
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+</head>
+<body>
+    <!--header section-->
+    <header>
+        <div class="container">
+            <div class="row temp_wrapper">
+                <div class="col-lg-12 col-sm-12 temp_info">
+                    <h1 data-aos = "fade-left">Temperature Converter</h1>
+                    <p class="lead" data-aos="fade-right">Temperature degrees conversions of Fahrenheit (°F), Celsius (°C).</p>
+                </div>
+
+                <div class="col-lg-12 col-sm-12 temp_converter">
+                    <div class="card">
+                        <div class="card-body">
+                            <form action="/index.php" onsubmit="return false">
+                                
+                                <div class="form-group mr-5">
+                                    <input type="number" placeholder="0" name="temp" id="temp_input">
+                                </div>
+
+                                <div class="form-group">
+                                    <select name="temp_diff" id="temp_diff">
+                                        <option value="celcious">Celcious</option>
+                                        <option value="fahrenheit">Fahrenheit</option>
+                                    </select>
+                                </div>
+                            </form>
+
+                            <div class="pr-3">
+                                <button type="submit" class="btn btn-md btn-success text-uppercase " onclick="send()" >submit</button>
+
+                                <button type="reset" class="btn btn-md btn-secondary text-uppercase " onclick="clean()" >clear</button>
+                            </div>
+
+                            <p class="lead" id="show_temp"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!---App Description Section-->
+    <div id="app_descripton" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-sm-12">
+                    <p class="lead">Celsius, also called centigrade, scale based on 0° for the freezing point of water and 100° for the boiling point of water. Invented in 1742 by the Swedish astronomer Anders Celsius, it is sometimes called the centigrade scale because of the 100-degree interval between the defined points.</p>
+                    <p class="lead">
+                        The Fahrenheit temperature scale is used in the United States; the Celsius, or centigrade, scale is employed in most other countries and for scientific purposes worldwide.
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--footer-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-sm-12">
+                    <p>Temperature Converter &copy; 2021</p>
+                    <p>Designed By <strong>Bipronath Saha</strong> </p> 
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--Bootstrap JS, Jquery, Popper JS-->
+    <script src="/js/jquery.slim.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <!--aos JS-->
+    <script src="/js/aos.js"></script>
+    <!--Custom JS-->
+    <script src="/js/index.js"></script>
+</body>
+</html>

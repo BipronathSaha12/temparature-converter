@@ -1,0 +1,99 @@
+/*======================================================
+            Common Style
+=======================================================*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 17px;
+}
+
+/*=====================================================
+                Header Section 
+======================================================*/
+header{
+    background-color: #b05b3b;
+    min-height: 100vh;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.temp_wrapper{
+    width: 100%;
+    display: table;
+    content: " ";
+    clear: both;
+}
+
+.temp_info h1{
+    font-size: 30px;
+    font-style: italic;
+    color: #f9f9f9;
+    margin-bottom: 15px;
+}
+
+.temp_info p{
+    font-size: 20px;
+    font-weight: 500 !important;
+    color: #f2f2f2;
+    margin-bottom: 50px;
+}
+
+.temp_converter .card{
+    background-color: #FFB740;
+    width: 480px;
+    height: auto;
+    margin:0px auto;
+}
+
+.temp_converter .card form {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+form input[type = "number"],select{
+    padding: 5px;
+    outline: none;
+}
+
+.card .btn{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.btn[type = "reset"]{
+    background-color: #b05b3b;
+    border-color: #b05b3b;
+}
+
+/*=======================================
+            App Description
+========================================*/
+#app_descripton{
+    background-color: #753422;
+}
+
+#app_descripton p{
+    font-size: 20px;
+    color: #f6f6f6;
+    line-height: 25px;
+}
+
+footer{
+    background-color: #F5E79D;
+    padding:20px; 
+    text-align: center;
+    color: #333;
+}
